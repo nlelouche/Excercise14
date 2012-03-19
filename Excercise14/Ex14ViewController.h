@@ -10,4 +10,9 @@
 
 @interface Ex14ViewController : UIViewController
 
+
+
+@property (nonatomic, retain) IBOutlet UIButton *sendTweetButton;
+//- (IBAction)sendTweet:(id)sender;
+
 @end

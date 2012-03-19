@@ -22,13 +22,13 @@
 		24C2625715176B8E00FF6643 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		24C2625915176B8E00FF6643 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24C2625B15176B8E00FF6643 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		24C2625F15176B8E00FF6643 /* Excercise14-Info.plist */ = {isa = PBXFileReference; path = "Excercise14-Info.plist"; sourceTree = "<group>"; };
+		24C2625F15176B8E00FF6643 /* Excercise14-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Excercise14-Info.plist"; sourceTree = "<group>"; };
 		24C2626115176B8E00FF6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24C2626315176B8E00FF6643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24C2626515176B8E00FF6643 /* Excercise14-Prefix.pch */ = {isa = PBXFileReference; path = "Excercise14-Prefix.pch"; sourceTree = "<group>"; };
-		24C2626615176B8E00FF6643 /* Ex14AppDelegate.h */ = {isa = PBXFileReference; path = Ex14AppDelegate.h; sourceTree = "<group>"; };
+		24C2626515176B8E00FF6643 /* Excercise14-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Excercise14-Prefix.pch"; sourceTree = "<group>"; };
+		24C2626615176B8E00FF6643 /* Ex14AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ex14AppDelegate.h; sourceTree = "<group>"; };
 		24C2626715176B8E00FF6643 /* Ex14AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex14AppDelegate.m; sourceTree = "<group>"; };
-		24C2626915176B8E00FF6643 /* Ex14ViewController.h */ = {isa = PBXFileReference; path = Ex14ViewController.h; sourceTree = "<group>"; };
+		24C2626915176B8E00FF6643 /* Ex14ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ex14ViewController.h; sourceTree = "<group>"; };
 		24C2626A15176B8E00FF6643 /* Ex14ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex14ViewController.m; sourceTree = "<group>"; };
 		24C2626D15176B8E00FF6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Ex14ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
