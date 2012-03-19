@@ -8,24 +8,20 @@
 
 #import "Ex14ViewController.h"
 
-@interface Ex14ViewController ()
-
-
-@end
 
 @implementation Ex14ViewController
 
-@synthesize sendTweetButton = _sendTweetButton;
-/*
+@synthesize sendTweetButton;
+
 
 - (IBAction)sendTweet:(id)sender {
     
     // Set up the built-in twitter composition view controller.
-    Ex14ViewController *tweetViewController = [[Ex14ViewController alloc] init];
+    TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
     
     // Set the initial tweet text. See the framework for additional properties that can be set.
     [tweetViewController setInitialText:@""];
-    
+   
     // Create the completion handler block.
     [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
         NSString *output;
@@ -53,11 +49,25 @@
     [self presentModalViewController:tweetViewController animated:YES];    
     
 }
-*/
+
+- (void)checkTweetingStatus {
+    
+    if ([TWTweetComposeViewController canSendTweet]) {
+        self.sendTweetButton.enabled = YES;
+        self.sendTweetButton.alpha = 1.0f;
+    } else {
+        self.sendTweetButton.enabled = NO;
+        self.sendTweetButton.alpha = 0.5f;
+    }
+     
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self checkTweetingStatus];
+
 }
 
 - (void)viewDidUnload

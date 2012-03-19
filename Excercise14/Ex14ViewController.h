@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Twitter/Twitter.h"
+#import "Accounts/Accounts.h"
+
 
 @interface Ex14ViewController : UIViewController
 
 
+@property (strong, nonatomic) IBOutlet UIButton *sendTweetButton;
 
-@property (nonatomic, retain) IBOutlet UIButton *sendTweetButton;
-//- (IBAction)sendTweet:(id)sender;
+- (IBAction)sendTweet:(id)sender;
+- (void)checkTweetingStatus;
 
 @end
