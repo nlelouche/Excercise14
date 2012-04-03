@@ -17,17 +17,14 @@
 {
     [tweetViewController setInitialText:@""];
     
-    // Create the completion handler block.
     [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
         NSString *output;
         
         switch (result) {
             case TWTweetComposeViewControllerResultCancelled:
-                // The cancel button was tapped.
                 output = @"Tweet cancelled.";
                 break;
             case TWTweetComposeViewControllerResultDone:
-                // The tweet was sent.
                 output = @"Tweet sent.";
                 break;
             default:

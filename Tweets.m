@@ -14,23 +14,18 @@
 - (void)sendTweetFromViewController: (UIViewController*)root
 {
     
-    // Set up the built-in twitter composition view controller.
     TWTweetComposeViewController *tweetViewController = [[[TWTweetComposeViewController alloc] init] autorelease];
     
-    // Set the initial tweet text. See the framework for additional properties that can be set.
     [tweetViewController setInitialText:@""];
     
-    // Create the completion handler block.
     [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
         NSString *output;
         
         switch (result) {
             case TWTweetComposeViewControllerResultCancelled:
-                // The cancel button was tapped.
                 output = @"Tweet cancelled.";
                 break;
             case TWTweetComposeViewControllerResultDone:
-                // The tweet was sent.
                 output = @"Tweet sent.";
                 break;
             default:
