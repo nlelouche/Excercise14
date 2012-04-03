@@ -7,12 +7,13 @@
 //
 
 #import "Ex14ViewController.h"
-//#import "Tweets.h"
 #import "Twitter/Twitter.h"
 #import "UIViewController+TWTweet.h"
 
+#define SUBMIT_IMAGE
+
 @interface Ex14ViewController()
-//@property (nonatomic, retain) Tweets *tweetObject;
+
 
 @end
 
@@ -20,34 +21,27 @@
 
 @synthesize sendTweetButton = _sendTweetButton;
 @synthesize submitImage = _submitImage;
-//@synthesize tweetObject =_tweetObject;
+
 
 - (void)dealloc
 {
     [_sendTweetButton release];
-//    [_tweetObject release];
+    [_submitImage release];
     [super dealloc];
 }
-/*
-- (Tweets*)tweetObject
-{
-    if (_tweetObject == nil) {
-        _tweetObject = [[Tweets alloc] init];
-    }
-    return _tweetObject;
-}
-*/
+
 - (IBAction)sendTweet:(id)sender {
     
     TWTweetComposeViewController *tweet = [[[TWTweetComposeViewController alloc] init] autorelease];
-    //http://www.raywenderlich.com/5519/beginning-twitter-in-ios-5
+   
+#ifdef SUBMIT_IMAGE    
     if (_submitImage.on){
             [tweet addImage:[UIImage imageNamed:@"Logo-TPG.png"]];
     }
-
-  //  [tweet addURL:[NSURL URLWithString:@"http://www.threepillarglobal.com/"]];
+#endif
+    
     [self presentModalTWTweetViewController:tweet animated:YES];
-    //[self.tweetObject sendTweetFromViewController:self];
+    
 }
 
 - (void)viewDidLoad
@@ -55,7 +49,15 @@
     [super viewDidLoad];
     
     TWTweetComposeViewController *tweet = [[[TWTweetComposeViewController alloc] init] autorelease];
-    
+#ifdef SUBMIT_IMAGE    
+
+        _submitImage = [[UISwitch alloc] initWithFrame:CGRectMake(200.0, 200.0, 100.0, 100.0)];
+        UILabel *myLabel = [[[UILabel alloc] initWithFrame:CGRectMake(30.0, 185.0, 150.0, 50.0)] autorelease];
+        myLabel.text = @"Submit TPG Logo";
+        [self.view addSubview:myLabel];
+        [self.view addSubview:_submitImage];
+
+#endif    
     if ([tweet checkTweetingStatus]){
             self.sendTweetButton.enabled = YES;
             self.sendTweetButton.alpha = 1.0f;
