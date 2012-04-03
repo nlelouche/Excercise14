@@ -17,6 +17,9 @@
 		24C2626E15176B8E00FF6643 /* Ex14ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C2626C15176B8E00FF6643 /* Ex14ViewController.xib */; };
 		24C262751517B86500FF6643 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C262741517B86500FF6643 /* Twitter.framework */; };
 		24C262771517B86C00FF6643 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C262761517B86C00FF6643 /* Accounts.framework */; };
+		EAAA4BA91524AE7C00BD320A /* Logo-TPG.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAA4BA81524AE7C00BD320A /* Logo-TPG.png */; };
+		EADA4116152382020007D909 /* Tweets.m in Sources */ = {isa = PBXBuildFile; fileRef = EADA4115152382020007D909 /* Tweets.m */; };
+		EADA411D1523B7700007D909 /* UIViewController+TWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = EADA411C1523B7700007D909 /* UIViewController+TWTweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,11 @@
 		24C2626D15176B8E00FF6643 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Ex14ViewController.xib; sourceTree = "<group>"; };
 		24C262741517B86500FF6643 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		24C262761517B86C00FF6643 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		EAAA4BA81524AE7C00BD320A /* Logo-TPG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TPG.png"; sourceTree = "<group>"; };
+		EADA4114152382020007D909 /* Tweets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweets.h; sourceTree = "<group>"; };
+		EADA4115152382020007D909 /* Tweets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweets.m; sourceTree = "<group>"; };
+		EADA411B1523B7700007D909 /* UIViewController+TWTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TWTweet.h"; sourceTree = "<group>"; };
+		EADA411C1523B7700007D909 /* UIViewController+TWTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TWTweet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		24C2624815176B8D00FF6643 = {
 			isa = PBXGroup;
 			children = (
+				EA8B38EA15225B3F0055515B /* 3rdPart */,
 				24C2625D15176B8E00FF6643 /* Excercise14 */,
 				24C2625615176B8E00FF6643 /* Frameworks */,
 				24C2625415176B8E00FF6643 /* Products */,
@@ -85,6 +94,7 @@
 		24C2625D15176B8E00FF6643 /* Excercise14 */ = {
 			isa = PBXGroup;
 			children = (
+				EAAA4BA81524AE7C00BD320A /* Logo-TPG.png */,
 				24C2626615176B8E00FF6643 /* Ex14AppDelegate.h */,
 				24C2626715176B8E00FF6643 /* Ex14AppDelegate.m */,
 				24C2626915176B8E00FF6643 /* Ex14ViewController.h */,
@@ -104,6 +114,17 @@
 				24C2626515176B8E00FF6643 /* Excercise14-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA8B38EA15225B3F0055515B /* 3rdPart */ = {
+			isa = PBXGroup;
+			children = (
+				EADA4114152382020007D909 /* Tweets.h */,
+				EADA4115152382020007D909 /* Tweets.m */,
+				EADA411B1523B7700007D909 /* UIViewController+TWTweet.h */,
+				EADA411C1523B7700007D909 /* UIViewController+TWTweet.m */,
+			);
+			name = 3rdPart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +180,7 @@
 			files = (
 				24C2626215176B8E00FF6643 /* InfoPlist.strings in Resources */,
 				24C2626E15176B8E00FF6643 /* Ex14ViewController.xib in Resources */,
+				EAAA4BA91524AE7C00BD320A /* Logo-TPG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +194,8 @@
 				24C2626415176B8E00FF6643 /* main.m in Sources */,
 				24C2626815176B8E00FF6643 /* Ex14AppDelegate.m in Sources */,
 				24C2626B15176B8E00FF6643 /* Ex14ViewController.m in Sources */,
+				EADA4116152382020007D909 /* Tweets.m in Sources */,
+				EADA411D1523B7700007D909 /* UIViewController+TWTweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +307,7 @@
 				24C2627315176B8E00FF6643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
